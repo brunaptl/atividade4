@@ -7,7 +7,7 @@ output: html_document
 
 #Finding surgeon fish
 
-Acessar dados da espécie 'Acanthurus chirurgus' nos repositórios de biodiversidade GBIF e OBIS.
+Acessar dados do peixe-cirurgião 'Acanthurus chirurgus' nos repositórios de biodiversidade GBIF e OBIS.
 
 ```{r Baixar, checar e validar dados do GBIF}
 library(tidyverse)
@@ -171,5 +171,6 @@ ggplot() +
 ```{r Criar arquivo com todos os dados}
 dir.create("data")
 write.csv(all_data, "data/occ_GBIF-OBIS_aca_chir.csv", row.names = FALSE)
+
 ```
 
